@@ -1,0 +1,8 @@
+/home/pi/ympd/build/CMakeFiles/edit_cache.dir
+/home/pi/ympd/build/CMakeFiles/install/strip.dir
+/home/pi/ympd/build/CMakeFiles/rebuild_cache.dir
+/home/pi/ympd/build/CMakeFiles/list_install_components.dir
+/home/pi/ympd/build/CMakeFiles/install.dir
+/home/pi/ympd/build/CMakeFiles/install/local.dir
+/home/pi/ympd/build/CMakeFiles/ympd.dir
+/home/pi/ympd/build/CMakeFiles/mkdata.dir
