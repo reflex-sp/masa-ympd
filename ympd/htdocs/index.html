@@ -29,19 +29,8 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-play-circle"></span> Z-MPD</a>
-      </div>
-      <div class="collapse navbar-collapse">
-
-        <ul id="nav_links" class="nav navbar-nav">
-          <li id="queue"><a href="#/">Queue</a></li>
-          <li id="browse"><a href="#/browse/0/">Browse database</a></li>
-           <!--  <li id="dirble"><a href="#/dirble/">Dirble</a></li> -->
-          <li><a href="#" data-toggle="modal" data-target="#addstream">Add Stream</a></li>
-          <li><a href="#" data-toggle="modal" data-target="#settings" onclick="getHost();">Settings</a></li>
-          <li><a href="#" data-toggle="modal" data-target="#shutdown" onclick="getHost();">Shutdown</a></li>
-        </ul>
-
-        <div class="btn-toolbar navbar-btn navbar-right" role="toolbar">
+		
+        <div class="btn-toolbar navbar-btn navbar-left" role="toolbar">
           <div class="btn-group">
             <button type="button" class="btn btn-default" onclick="socket.send('MPD_API_SET_PREV');">
               <span class="glyphicon glyphicon-backward"></span>
@@ -56,6 +45,13 @@
               <span class="glyphicon glyphicon-forward"></span>
             </button>
           </div>
+        </div>
+
+		
+      </div>
+      <div class="collapse navbar-collapse">
+
+        <div class="btn-toolbar navbar-btn navbar-right" role="toolbar">
           <div class="btn-group">
             <div class="btn btn-toolbar btn-default">
               <span id="volume-icon" class="glyphicon glyphicon-volume-up"></span>
@@ -63,6 +59,17 @@
             </div>
           </div>
         </div>
+
+
+        <ul id="nav_links" class="nav navbar-nav">
+          <li id="queue"><a href="#/">Queue</a></li>
+          <li id="browse"><a href="#/browse/0/">Browse database</a></li>
+           <!--  <li id="dirble"><a href="#/dirble/">Dirble</a></li> -->
+          <li><a href="#" data-toggle="modal" data-target="#addstream">Add Stream</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#settings" onclick="getHost();"><span class="glyphicon glyphicon-wrench"></span></a></li>
+          <li><a href="#" data-toggle="modal" data-target="#shutdown" onclick="getHost();"><span class="glyphicon glyphicon-off"></span></a></li>
+        </ul>
+
         <form id="search" class="navbar-form navbar-right" role="search">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search">
@@ -244,7 +251,7 @@
 
               <div class="form-group col-md-6">
                 <button type="button" class="btn btn-default" onclick="systemMount();">
-                  <span class="glyphicon glyphicon-refresh"></span> NAS MOUNT
+                  <span class="glyphicon glyphicon-hdd"></span> NAS MOUNT
                 </button>
               </div>
 
